@@ -52,10 +52,15 @@ body {
 }
 
 .page-header {
-    margin-top: 38px;
+    padding-top: 38px;
 }
 
 /* navigation */
+
+nav {
+    float: right;
+    line-height: 0px;
+}
 
 .site-navigation {
     margin: 0;
@@ -69,7 +74,7 @@ body {
     width: 482px;
     margin: 0;
     padding: 0;
-    float: right;
+    
 }
 
 .site-navigation-item{
@@ -106,12 +111,13 @@ body {
     float: left;
 }
 
-
-/* section article */
-
 .content {
     margin: 0 auto;
+    padding: 0;
+    padding-bottom: 80px;
 }
+
+/* section article */
 
 .content-list {
     list-style: none; 
@@ -138,6 +144,7 @@ body {
     font-size: 0;
     float: left;
     margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .content-item:nth-child(4n) {
@@ -191,10 +198,11 @@ h2 {
     text-transform: uppercase;
     color: #515151;
     font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     font-size: 48px;
     line-height: 32px;
     margin-top: 106px;
-    margin-bottom: 32px;
+    margin-bottom: 92px;
 }
 
 h2::after {
@@ -204,7 +212,6 @@ h2::after {
     background-color:#1abc9ced;
     content: '';
     margin: 32px auto;
-    margin-bottom: 92px;
 }
 
 .content-link:hover .content-text-name {
@@ -226,12 +233,15 @@ h2::after {
 /* Section - Latest News */
 
 .content-item-latest-news {
-    display: inline-block;
     width: 350px;
     margin-right: 26px;
     margin-bottom: 0px;
-    
-  }
+    float: left;
+}
+
+.img-latest-news {
+    margin-bottom: 9px;
+}
 
   .article-title-latest-news {
     font-size: 18px;
@@ -243,8 +253,8 @@ h2::after {
     font-weight: 600;
     text-align: left;
     color: #555252;
-    margin-top: 11px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 .article-title-latest-news::after {
@@ -255,7 +265,6 @@ h2::after {
     content: '';
     margin: 0;
     margin-top: 7px;
-    margin-bottom: 5px;
 }
 
 .article-content-latest-news {
@@ -267,7 +276,6 @@ h2::after {
     font-family: 'Open Sans', sans-serif;
     color: #555252;
     text-align: left;
-    margin-top: 23px;
 }
 
 .content-list-latest-news {
@@ -282,13 +290,6 @@ h2::after {
 }
 
 /* Button */
-
-.button-latest-news {
-    padding: 0px;
-    margin: 0 auto;
-    margin-top: 14px;
-    margin-bottom: 80px;
-}
 
 .button-load {
     box-sizing: border-box;
@@ -314,11 +315,7 @@ h2::after {
     text-align: center;
 }
 
-.button-latest-news:hover .button-load {
+.button-load:hover,
+.button-load:focus {
 	background-color: #7fd9c7;
 }
-
-.button-latest-news-link:focus .button-load {
-	background-color: #7fd9c7;
-}
-
