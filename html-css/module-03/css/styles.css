@@ -155,10 +155,12 @@ img {
 }
   
 /* footer */
-.button-footer {
+.button-box {
+    display: block;
     text-align: center;
     padding: 46px;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 
 .button_load {
