@@ -254,6 +254,7 @@ h2::after {
     width: 104px;
     height: 104px;
     z-index: 2; 
+    border: none;
 }
 
 .wrapper-main {
