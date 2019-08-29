@@ -1,0 +1,432 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-regular.woff'); 
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin_vietnamese-regular.woff'); 
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('montserrat-v14-latin_vietnamese-regular.woff2') format('woff2');
+}
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v20-latin-300.woff'); /* IE9 Compat Modes */
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2');
+}
+
+/* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.woff');
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2');
+}
+
+
+/* main selectors */
+.redline {
+    outline: 1px solid red;
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before, 
+*::after{
+	box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border:0;
+     padding: 0;
+     white-space:nowrap;
+     clip-path:inset(100%);
+     clip: rect(0 0 0 0);
+     overflow:hidden;
+}
+
+body {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.wrapper{
+	width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    margin-bottom: 57px;
+}
+
+
+/* header */
+.page-header {
+    background-image: url(../img/header-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 70px;
+    background-color: rgb(73, 73, 73);
+}
+
+.top {
+    
+}
+
+/* Button Section */
+.buttons-wrapper-top {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 20px;
+}
+
+/* Button "Log in" */
+.button-log-in {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* Button "Sign up" */
+.button-box-signup {
+    box-sizing: border-box;
+    width: 90px;
+    height: 36px;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 27px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(26, 25, 21, 0);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.button-text-signup {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Button "Sign up" hover effect
+.button-load:hover,
+.button-load:focus {
+	background-color: rgb(250, 0, 0);
+}
+*/
+
+
+/* Button - red color" */
+.button-box-red {
+    box-sizing: border-box;
+    width: 280px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+}
+
+.button-text-red {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 13px;
+}
+
+
+/* Button - white color */
+.button-box-white {
+    box-sizing: border-box;
+    width: 280px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 78, 80);
+    background-color: rgb(255, 255, 255);
+}
+
+.button-text-white {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 78, 80);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+}
+
+
+/* Header text */
+.header-text {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;,
+}
+
+.text-urla {
+    display: block;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    padding-top: 114px;
+}
+
+.text-big-holiday {
+    display: block;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.text-small {
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  padding-top: 20px;
+  width: 220px;
+  margin-bottom: 18px;
+}
+
+
+/* 
+@media only screen and (max-width: 320px) {
+    body {
+      background-image: url(../img/header-bg.png); 
+    } 
+} */
+
+
+/* Main */
+.main-header {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.list-people {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.list-people-item {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.list-people-item-picture {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.name {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 18px;
+}
+
+.about {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 15px;
+    width: 180px;
+}
+
+.ellipse {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.icon {
+    position: absolute;
+    bottom: 13px;
+    right: 12px;
+}
+
+.header-bootstrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+/* Media */
+@media screen and (min-width: 768px) {
+    .wrapper{
+        width: 768px;
+        margin-bottom: 40px;
+    }
+
+    .page-header {
+        height: 700px;
+        margin-bottom: 70px;
+        align-content: center;
+    }
+
+    .top {
+        position: relative;
+        width: 768px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 130px;
+    }
+
+    .buttons-wrapper-top {
+        position: absolute;
+        margin: 0 auto;
+        padding: 0;
+        top: 33px;
+        right: 50px;
+    }
+
+    .text-urla {
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        padding-top: 0px;
+    }
+
+    .text-big-holiday {
+        font-size: 52px;
+        width: 500px;
+        margin: 0 auto;
+        padding-top: 0px;
+    }
+
+    .text-small {
+        font-size: 24px;
+        padding-top: 34px;
+        width: 420px;
+        margin-bottom: 34px;
+      }
+    
+    .list-people {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .list-people-item {
+        display: block;
+        width: 200px;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .wrapper{
+        width: 1440px;
+        margin-bottom: 73px;
+    }
+
+    .top {
+        width: 950px;
+    }
+    
+    .list-people {
+        width: 950px;
+    }
+}
