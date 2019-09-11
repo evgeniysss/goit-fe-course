@@ -128,10 +128,10 @@ nav {
 .content {
     margin: 0 auto;
     padding: 0;
+    padding-top: 90px;
 }
 
 .text-up {
-    padding-top: 90px;
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
     color: rgb(51, 51, 51);
@@ -150,6 +150,7 @@ nav {
     line-height: 36px;
     text-align: center;
     margin: 0;
+    margin-bottom: 38px;
 }
 
 .text-h2::after {
@@ -159,7 +160,7 @@ nav {
     background-color:#f38181;
     content: '';
     margin: 25px auto;
-    margin-bottom: 38px;
+    /* margin-bottom: 38px; */
 }
 
 .content-item-list {
@@ -325,7 +326,8 @@ nav {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    margin-bottom: 10px;
 }
 
 .text-occupation-second-section {
@@ -339,7 +341,7 @@ nav {
     text-transform: none;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 
@@ -359,31 +361,7 @@ nav {
 
 
 /* Overlay Menu Section Section */
-.overlay {
-    position: absolute;
-    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    width: 380px;
-    height: 470px;
-    opacity: 0;
-    margin: 0 auto;
-    padding: 0;
-    border-width: 0px;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    transition-property: opacity;
-    transition-duration: 0.2s;
-    right: 10px;
-    top: -10px;
-    box-shadow: 10px 10px #95e1d3;
-}
 
-.overlay:hover {
-    transition-property: opacity;
-    transition-duration: 0.2s;
-    opacity: 0.549;
-}
 
 .icon-list {
     position: absolute;
@@ -530,3 +508,45 @@ input[type="text"] {
 	background-color: #7fd9c7;
 }
 
+.content-item-article {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    height: 102px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-picture-second-section {
+    margin-bottom: 30px;
+}
+
+.content-picture-second-section:hover .overlay {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(to top,rgba(239, 138, 138, .8), rgba(242, 217, 136, .8));
+    width: 380px;
+    height: 470px;
+    margin: 0 auto;
+    padding: 0;
+    border-width: 0px;
+    /* border-color: rgb(255, 255, 255); */
+    border-style: solid;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    right: 10px;
+    top: -10px;
+    box-shadow: 10px 10px #95e1d3;
+    opacity: 0;
+    /* display: none; */
+}
+
+.overlay:hover {
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    opacity: 1;
+}
