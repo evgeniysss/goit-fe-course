@@ -1,21 +1,24 @@
-/* montserrat-regular - latin */
 @font-face {
-    font-family: 'Montserrat';
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/montserrat-v14-latin-regular.woff'); 
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2');
-}
-
+    src: url(../fonts/montserrat-v14-latin-regular.woff) format(woff);
+    src: url(../fonts/montserrat-v14-latin-regular.woff2) format(woff2);
+ }
 @font-face {
-    font-family: 'Montserrat';
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/montserrat-v14-latin_vietnamese-regular.woff'); 
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('montserrat-v14-latin_vietnamese-regular.woff2') format('woff2');
-}
+    src: url(../fonts/montserrat-v14-latin-700.woff) format(woff);
+    src: url(../fonts/montserrat-v14-latin-700.woff2) format(woff2);
+ }
+@font-face {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/montserrat-v14-latin-italic.woff) format(woff);
+    src: url(../fonts/montserrat-v14-latin-italic.woff2) format(woff2);
+ }
 
 /* roboto-300 - latin */
 @font-face {
@@ -104,12 +107,12 @@ body {
     min-height: 540px;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
     background-color: rgb(73, 73, 73);
 }
 
 .top {
-    
+    margin-bottom: 30px;
 }
 
 /* Button Section */
@@ -240,6 +243,7 @@ body {
     line-height: 1;
     text-align: center;
     padding-top: 114px;
+    /* margin-bottom: 30px; */
 }
 
 .text-big-holiday {
@@ -251,8 +255,10 @@ body {
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    padding-top: 30px;
-    /* margin-bottom: 20px; */
+    margin: 0;
+    padding: 0;
+    /* padding-top: 30px; */
+    margin-bottom: 20px;
 }
 
 .text-small {
@@ -263,7 +269,7 @@ body {
   color: rgb(255, 255, 255);
   line-height: 1;
   text-align: center;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width: 220px;
   margin-bottom: 18px;
 }
@@ -278,6 +284,10 @@ body {
 
 
 /* Main */
+.section__main {
+    padding-top: 70px;
+}
+
 .main-header {
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
@@ -285,6 +295,7 @@ body {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
+    margin: 0;
     margin-bottom: 12px;
 }
 
@@ -346,111 +357,9 @@ body {
 }
 
 
-/* Media */
-@media screen and (min-width: 765px) {
-    .wrapper{
-        width: 765px;
-        margin-bottom: 40px;
-    }
-
-    .page-header {
-        margin-bottom: 70px;
-    }
-    
-    .list-people {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 500px;
-    }
-
-    .list-people-item {
-        display: block;
-        width: 200px;
-        margin-top: 30px;
-    }
-}
 
 
-@media screen and (min-width: 768px) {
-    .wrapper{
-        width: 768px;
-        margin-bottom: 40px;
-    }
-
-    .page-header {
-        height: 700px;
-        margin-bottom: 70px;
-        align-content: center;
-    }
-
-    .top {
-        position: relative;
-        width: 768px;
-        height: 100px;
-        margin: 0 auto;
-        padding: 0;
-        margin-bottom: 130px;
-    }
-
-    .buttons-wrapper-top {
-        position: absolute;
-        margin: 0 auto;
-        padding: 0;
-        top: 33px;
-        right: 50px;
-    }
-
-    .text-urla {
-        position: absolute;
-        top: 40px;
-        left: 50px;
-        padding-top: 0px;
-    }
-
-    .text-big-holiday {
-        font-size: 52px;
-        width: 500px;
-        margin: 0 auto;
-        padding-top: 0px;
-    }
-
-    .text-small {
-        font-size: 24px;
-        padding-top: 34px;
-        width: 420px;
-        margin-bottom: 34px;
-      }
-    
-    .list-people {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 500px;
-    }
-
-    .list-people-item {
-        display: block;
-        width: 200px;
-        margin-top: 30px;
-    }
-}
-
-
-@media screen and (min-width: 1440px) {
-    .wrapper{
-        width: 1440px;
-        margin-bottom: 73px;
-    }
-
-    .top {
-        width: 950px;
-    }
-    
-    .list-people {
-        width: 950px;
-    }
-}
+/* Pseudoelement */
 
 .list-people-item-picture {
     position: relative;
@@ -490,4 +399,114 @@ body {
 .icon-4::before {
     background-image: url("../img/icons/4.png");
     background-color: #4e73db;
+}
+
+
+
+/* Media */
+
+/* @media screen and (min-width: 765px) {
+    .wrapper{
+        width: 765px;
+        margin-bottom: 40px;
+    }
+
+    .page-header {
+        margin-bottom: 70px;
+    }
+    
+    .list-people {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .list-people-item {
+        display: block;
+        width: 200px;
+        margin-top: 30px;
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    .wrapper{
+        width: 768px;
+        margin-bottom: 40px;
+    }
+
+    .page-header {
+        height: 700px;
+        /* margin-bottom: 70px; */
+        align-content: center;
+    }
+
+    .top {
+        position: relative;
+        width: 768px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 130px;
+    }
+
+    .buttons-wrapper-top {
+        position: absolute;
+        margin: 0 auto;
+        padding: 0;
+        top: 33px;
+        right: 50px;
+    }
+
+    .text-urla {
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        padding-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .text-big-holiday {
+        font-size: 52px;
+        width: 500px;
+        margin: 0 auto;
+        padding-top: 0px;
+        margin-bottom: 34px;
+    }
+
+    .text-small {
+        font-size: 24px;
+        /* padding-top: 34px; */
+        width: 420px;
+        margin-bottom: 34px;
+      }
+    
+    .list-people {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .list-people-item {
+        display: block;
+        width: 200px;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .wrapper{
+        width: 1440px;
+        margin-bottom: 73px;
+    }
+
+    .top {
+        width: 950px;
+    }
+    
+    .list-people {
+        width: 950px;
+    }
 }
