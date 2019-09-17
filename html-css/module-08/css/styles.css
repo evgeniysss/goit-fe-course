@@ -100,7 +100,7 @@ body {
 
 /* header */
 .page-header {
-    background-image: url(../img/header-bg.png);
+    background-image: url(../img/bg_320.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -432,6 +432,10 @@ body {
 } */
 
 @media screen and (min-width: 768px) {
+    .page-header {
+        background-image: url(../img/bg_768.jpg);
+    }
+
     .wrapper{
         width: 768px;
         margin-bottom: 40px;
@@ -499,6 +503,10 @@ body {
 
 
 @media screen and (min-width: 1440px) {
+    .page-header {
+        background-image: url(../img/bg_1440.jpg);
+    }
+
     .wrapper{
         width: 1440px;
         margin-bottom: 73px;
