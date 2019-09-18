@@ -89,30 +89,27 @@ body {
     clear: both;
 }
 
-.wrapper{
+.wrapper {
 	width: 320px;
     margin: 0 auto;
-    padding: 0;
-    background-color: #ffffff;
-    margin-bottom: 57px;
+    margin-bottom: 130px;
 }
 
 
 /* header */
 .page-header {
-    background-image: url(../img/bg_320.jpg);
+    background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0,.3)), url(../img/bg_320.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 540px;
-    margin: 0 auto;
-    padding: 0;
     /* margin-bottom: 70px; */
-    background-color: rgb(73, 73, 73);
+    /* background-color: rgb(73, 73, 73); */
 }
 
 .top {
     margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 /* Button Section */
@@ -122,7 +119,8 @@ body {
     width: 160px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 20px;
+    margin-bottom: 114px;
+    /* padding-top: 20px; */
 }
 
 /* Button "Log in" */
@@ -230,7 +228,8 @@ body {
 .header-text {
     margin: 0 auto;
     padding: 0;
-    text-align: center;,
+    text-align: center;
+    margin-bottom: 18px;
 }
 
 .text-urla {
@@ -242,7 +241,7 @@ body {
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    padding-top: 114px;
+    /* padding-top: 114px; */
     /* margin-bottom: 30px; */
 }
 
@@ -271,7 +270,8 @@ body {
   text-align: center;
   /* padding-top: 20px; */
   width: 220px;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
+  margin: 0;
 }
 
 
@@ -286,6 +286,7 @@ body {
 /* Main */
 .section__main {
     padding-top: 70px;
+    margin-bottom: 57px;
 }
 
 .main-header {
@@ -296,7 +297,7 @@ body {
     line-height: 1.2;
     text-align: center;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 .list-people {
@@ -304,6 +305,7 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 30px;
 }
 
 .list-people-item {
@@ -373,9 +375,9 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    /* background-color: aqua; */
+    
     border: 4px solid #fff;
-    /* background-image: url("../img/icons/4.png"); */
+    
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -403,6 +405,13 @@ body {
     background-color: #4e73db;
 }
 
+.list-people-item:nth-child(4n) {
+    margin-bottom: 0px;
+}
+
+.list-people-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+}
 
 
 /* Media */
@@ -431,19 +440,23 @@ body {
     }
 } */
 
+
+
+
+
+
 @media screen and (min-width: 768px) {
     .page-header {
-        background-image: url(../img/bg_768.jpg);
+        background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0,.3)), url(../img/bg_768.jpg);
     }
 
     .wrapper{
         width: 768px;
-        margin-bottom: 40px;
+        margin-bottom: 190px;
     }
 
     .page-header {
         height: 700px;
-        /* margin-bottom: 70px; */
         align-content: center;
     }
 
@@ -462,6 +475,7 @@ body {
         padding: 0;
         top: 33px;
         right: 50px;
+        margin-bottom: 50px;
     }
 
     .text-urla {
@@ -469,7 +483,7 @@ body {
         top: 40px;
         left: 50px;
         padding-top: 0px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     .text-big-holiday {
@@ -482,7 +496,6 @@ body {
 
     .text-small {
         font-size: 24px;
-        /* padding-top: 34px; */
         width: 420px;
         margin-bottom: 34px;
       }
@@ -504,12 +517,12 @@ body {
 
 @media screen and (min-width: 1440px) {
     .page-header {
-        background-image: url(../img/bg_1440.jpg);
+        background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0,.3)), url(../img/bg_1440.jpg);
     }
 
     .wrapper{
         width: 1440px;
-        margin-bottom: 73px;
+        margin-bottom: 200px;
     }
 
     .top {
