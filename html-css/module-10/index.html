@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Module-10 Home work</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-new.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bem.css">
 </head>
 <body>
-
-    
-    <header class="header clearfix">
+    <header class="header">
      <div class="wrapper">
          <div class="header__top">
           <a href="#" class="header__logo"><img src="img/logo.png" alt="Logo" width="86" height="23"></a>
           <nav class="header__menu">
-              <ul class="navigation clearfix">
+              <ul class="navigation">
                   <li class="navigation__item">
                       <a href="#" class="navigation__link">About</a>
                   </li>
@@ -55,8 +53,6 @@
                 <h2 class="header__text">Welcome to MoGo</h2>
                 <div class="header__button"><button class="header__button-load header__button-text">Sunscribe</button></div>
          </div>
-         
-                
      </div>       
      </header>
 <div class="wrapper">
@@ -120,18 +116,42 @@
                 
                         <div class="wrapper-ss">
                                 <div class="content-second-section">
-                                        <ul class="content-list-second-section clearfix">
+                                        <ul class="content-list-second-section">
                                                 <li class="content-item-second-section">
-                                                        <article class="content-block-second-section clearfix">
+                                                        <article class="content-block-second-section">
                                                                 <div class="overlay">
                                                                         <ul class="icon-list">
-                                                                                <li><a href="#" class="button-menu button-facebook"></a></li>
-                                                                                <li><a href="#" class="button-menu button-twitter"></a></li>
-                                                                                <li><a href="#" class="button-menu button-pinterest"></a></li>
-                                                                                <li><a href="#" class="button-menu button-instagram"></a></li>
+                                                                                <li>
+                                                                                    <a href="#" class="button-menu">
+                                                                                        <svg class="svg-menu"><use href="spritemenu.svg#icon-facebook"></use></svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                     <a href="#" class="button-menu">
+                                                                                        <svg class="svg-menu"><use href="spritemenu.svg#icon-twitter"></use></svg>
+                                                                                     </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#" class="button-menu">
+                                                                                           <svg class="svg-menu"><use href="spritemenu.svg#icon-pinterest"></use></svg>
+                                                                                        </a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                        <a href="#" class="button-menu">
+                                                                                           <svg class="svg-menu"><use href="spritemenu.svg#icon-instagram"></use></svg>
+                                                                                        </a>
+                                                                                   </li>
                                                                              </ul>
                                                                 </div>
-                                                                 <img src="./img/second/1.jpg" alt="Product #1" class="content-picture-second-section" width="380" height="470">
+                                                                 
+                                                                <div class="content-picture-second-section">
+                                                                    <picture>
+                                                                        <source media="(min-width: 1024px)" srcset="/img/second/1.jpg 1x, /img/second/1@2x.jpg 2x">
+                                                                        <source srcset="/img/second/1.jpg, /img/second/1@2x.jpg 2x">
+                                                                        <img src="../img/second/1.jpg" alt="default" width="380" height="470" />
+                                                                     </picture>
+                                                                 </div>
+
                                                                  <div class="content-text-second-section">
                                                                      <h3 class="text-name-second-section">
                                                                          Matthew Dix
@@ -141,16 +161,40 @@
                                                          </article>
                                                  </li>
                                                  <li class="content-item-second-section">
-                                                        <article class="content-block-second-section clearfix">
+                                                        <article class="content-block-second-section">
                                                                 <div class="overlay">
                                                                         <ul class="icon-list">
-                                                                                <li><a href="#" class="button-menu button-facebook"></a></li>
-                                                                                <li><a href="#" class="button-menu button-twitter"></a></li>
-                                                                                <li><a href="#" class="button-menu button-pinterest"></a></li>
-                                                                                <li><a href="#" class="button-menu button-instagram"></a></li>
+                                                                                <li>
+                                                                                    <a href="#" class="button-menu">
+                                                                                        <svg class="svg-menu"><use href="spritemenu.svg#icon-facebook"></use></svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                     <a href="#" class="button-menu">
+                                                                                        <svg class="svg-menu"><use href="spritemenu.svg#icon-twitter"></use></svg>
+                                                                                     </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#" class="button-menu">
+                                                                                           <svg class="svg-menu"><use href="spritemenu.svg#icon-pinterest"></use></svg>
+                                                                                        </a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                        <a href="#" class="button-menu">
+                                                                                           <svg class="svg-menu"><use href="spritemenu.svg#icon-instagram"></use></svg>
+                                                                                        </a>
+                                                                                   </li>
                                                                              </ul>
                                                                 </div>
-                                                                 <img src="./img/second/2.jpg" alt="Product #2" class="content-picture-second-section" width="380" height="470">
+                                                                 
+                                                                <div class="content-picture-second-section">
+                                                                    <picture>
+                                                                        <source media="(min-width: 1024px)" srcset="/img/second/2.jpg 1x, /img/second/2@2x.jpg 2x">
+                                                                        <source srcset="/img/second/2.jpg, /img/second/2@2x.jpg 2x">
+                                                                        <img src="../img/second/2.jpg" alt="default" width="380" height="470" />
+                                                                     </picture>
+                                                                 </div>
+
                                                                  <div class="content-text-second-section">
                                                                      <h3 class="text-name-second-section">
                                                                          Christopher Campbell
@@ -160,16 +204,40 @@
                                                          </article>
                                                  </li>
                                                  <li class="content-item-second-section">
-                                                        <article class="content-block-second-section clearfix">
+                                                        <article class="content-block-second-section">
                                                                 <div class="overlay">
                                                                         <ul class="icon-list">
-                                                                                <li><a href="#" class="button-menu button-facebook"></a></li>
-                                                                                <li><a href="#" class="button-menu button-twitter"></a></li>
-                                                                                <li><a href="#" class="button-menu button-pinterest"></a></li>
-                                                                                <li><a href="#" class="button-menu button-instagram"></a></li>
+                                                                                <li>
+                                                                                    <a href="#" class="button-menu">
+                                                                                        <svg class="svg-menu"><use href="spritemenu.svg#icon-facebook"></use></svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                     <a href="#" class="button-menu">
+                                                                                        <svg class="svg-menu"><use href="spritemenu.svg#icon-twitter"></use></svg>
+                                                                                     </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                        <a href="#" class="button-menu">
+                                                                                           <svg class="svg-menu"><use href="spritemenu.svg#icon-pinterest"></use></svg>
+                                                                                        </a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                        <a href="#" class="button-menu">
+                                                                                           <svg class="svg-menu"><use href="spritemenu.svg#icon-instagram"></use></svg>
+                                                                                        </a>
+                                                                                   </li>
                                                                              </ul>
                                                                 </div>
-                                                                 <img src="./img/second/3.jpg" alt="Product #3" class="content-picture-second-section" width="380" height="470">
+
+                                                                <div class="content-picture-second-section">
+                                                                    <picture>
+                                                                        <source media="(min-width: 1024px)" srcset="/img/second/3.jpg 1x, /img/second/3@2x.jpg 2x">
+                                                                        <source srcset="/img/second/3.jpg, /img/second/3@2x.jpg 2x">
+                                                                        <img src="../img/second/3.jpg" alt="default" width="380" height="470" />
+                                                                     </picture>
+                                                                 </div>
+
                                                                  <div class="content-text-second-section">
                                                                      <h3 class="text-name-second-section">
                                                                          Michael Fertig
@@ -181,7 +249,6 @@
                                             </ul>
                                      </div>
                          </div>
-                
          </section>
          </main>
     
@@ -189,7 +256,7 @@
              <hr class="footer-line">
              <div class="footer-wrapper"> 
                      <p class="footer-text">© 2016 MoGo free PSD template by <span class="footer-text-color">Laaqiq</span></p>
-                     <div class="footer-form"><input type="text" value="Your Email..."><button class="button-load button-text">Sunscribe</button></div>
+                     <form class="footer-form"><input type="text" value="Your Email..."><button class="button-load button-text">Sunscribe</button></form>
                  </div>  
              </footer>
  </div>
