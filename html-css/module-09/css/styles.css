@@ -1,21 +1,24 @@
-/* montserrat-regular - latin */
 @font-face {
-    font-family: 'Montserrat';
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/montserrat-v14-latin-regular.woff'); 
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2');
-}
-
+    src: url(../fonts/montserrat-v14-latin-regular.woff) format(woff);
+    src: url(../fonts/montserrat-v14-latin-regular.woff2) format(woff2);
+ }
 @font-face {
-    font-family: 'Montserrat';
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/montserrat-v14-latin_vietnamese-regular.woff'); 
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('montserrat-v14-latin_vietnamese-regular.woff2') format('woff2');
-}
+    src: url(../fonts/montserrat-v14-latin-700.woff) format(woff);
+    src: url(../fonts/montserrat-v14-latin-700.woff2) format(woff2);
+ }
+@font-face {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/montserrat-v14-latin-italic.woff) format(woff);
+    src: url(../fonts/montserrat-v14-latin-italic.woff2) format(woff2);
+ }
 
 /* roboto-300 - latin */
 @font-face {
@@ -86,30 +89,31 @@ body {
     clear: both;
 }
 
-.wrapper{
+/* .wrapper {
 	width: 320px;
     margin: 0 auto;
-    padding: 0;
-    background-color: #ffffff;
-    margin-bottom: 57px;
+    
+} */
+
+.page-header {
+    padding-bottom: 130px;
 }
 
 
 /* header */
 .page-header {
-    background-image: url(../img/header-bg.png);
+    background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0,.3)), url(../img/bg_320.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 540px;
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 70px;
-    background-color: rgb(73, 73, 73);
+    /* margin-bottom: 70px; */
+    /* background-color: rgb(73, 73, 73); */
 }
 
 .top {
-    
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 /* Button Section */
@@ -119,7 +123,9 @@ body {
     width: 160px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 20px;
+    margin-bottom: 110px;
+    /* margin-bottom: 114px; */
+    /* padding-top: 20px; */
 }
 
 /* Button "Log in" */
@@ -130,7 +136,12 @@ body {
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
-    margin: 0 auto;
+    box-sizing: border-box;
+    width: 90px;
+    height: 36px;
+    border: none;
+    border-radius: 27px;
+    background-color: rgba(26, 25, 21, 0);
     padding: 0;
 }
 
@@ -140,14 +151,11 @@ body {
     box-sizing: border-box;
     width: 90px;
     height: 36px;
-    margin: 0 auto;
-    padding: 0px;
     border-radius: 27px;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(255, 255, 255);
     background-color: rgba(26, 25, 21, 0);
-    margin: 0 auto;
     padding: 0;
 }
 
@@ -158,8 +166,6 @@ body {
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
-    margin: 0 auto;
-    padding: 0;
 }
 
 /* Button "Sign up" hover effect
@@ -227,7 +233,8 @@ body {
 .header-text {
     margin: 0 auto;
     padding: 0;
-    text-align: center;,
+    text-align: center;
+    margin-bottom: 18px;
 }
 
 .text-urla {
@@ -239,7 +246,8 @@ body {
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    padding-top: 114px;
+    /* padding-top: 114px; */
+    /* margin-bottom: 30px; */
 }
 
 .text-big-holiday {
@@ -251,19 +259,24 @@ body {
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    padding-top: 30px;
+    margin: 0;
+    padding: 0;
+    /* padding-top: 30px; */
+    margin-bottom: 20px;
 }
 
 .text-small {
-  display: inline-block;
+  display: block;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: rgb(255, 255, 255);
   line-height: 1;
   text-align: center;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width: 220px;
+  /* margin-bottom: 18px; */
+  margin: 0 auto;
   margin-bottom: 18px;
 }
 
@@ -277,6 +290,11 @@ body {
 
 
 /* Main */
+.section__main {
+    padding-top: 70px;
+    padding-bottom: 57px;
+}
+
 .main-header {
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
@@ -284,7 +302,8 @@ body {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 12px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .list-people {
@@ -292,6 +311,7 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 30px;
 }
 
 .list-people-item {
@@ -306,6 +326,7 @@ body {
     height: 120px;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 18px;
 }
 
 .name {
@@ -317,7 +338,8 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 0;
-    padding-top: 18px;
+    /* padding-top: 18px; */
+    margin-bottom: 15px;
 }
 
 .about {
@@ -328,7 +350,7 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 0;
-    padding-top: 15px;
+    /* padding-top: 15px; */
     width: 180px;
 }
 
@@ -344,62 +366,71 @@ body {
     right: 12px;
 }
 
-.header-bootstrap {
-    margin-left: -15px;
-    margin-right: -15px;
+
+
+
+/* Pseudoelement */
+
+.list-people-item-picture {
+    position: relative;
+}
+
+.list-people-item-picture::before {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    border: 4px solid #fff;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icon-1::before {
+    background-image: url("../img/icons/1.png");
+    background-color: #ff4e50;
+}
+
+.icon-2::before {
+    background-image: url("../img/icons/2.png");
+    background-color: #1cd7ad;
+}
+
+.icon-3::before {
+    background-image: url("../img/icons/3.png");
+    background-color: #ffa507;
+}
+
+.icon-4::before {
+    background-image: url("../img/icons/4.png");
+    background-color: #4e73db;
+}
+
+.list-people-item:nth-child(4n) {
+    margin-bottom: 0px;
+}
+
+.list-people-item:nth-last-child(-n + 1) {
+    margin-bottom: 0px;
 }
 
 
 /* Media */
-@media screen and (min-width: 768px) {
+
+/* @media screen and (min-width: 765px) {
     .wrapper{
-        width: 768px;
+        width: 765px;
         margin-bottom: 40px;
     }
 
     .page-header {
-        height: 700px;
         margin-bottom: 70px;
-        align-content: center;
     }
-
-    .top {
-        position: relative;
-        width: 768px;
-        height: 100px;
-        margin: 0 auto;
-        padding: 0;
-        margin-bottom: 130px;
-    }
-
-    .buttons-wrapper-top {
-        position: absolute;
-        margin: 0 auto;
-        padding: 0;
-        top: 33px;
-        right: 50px;
-    }
-
-    .text-urla {
-        position: absolute;
-        top: 40px;
-        left: 50px;
-        padding-top: 0px;
-    }
-
-    .text-big-holiday {
-        font-size: 52px;
-        width: 500px;
-        margin: 0 auto;
-        padding-top: 0px;
-    }
-
-    .text-small {
-        font-size: 24px;
-        padding-top: 34px;
-        width: 420px;
-        margin-bottom: 34px;
-      }
     
     .list-people {
         display: flex;
@@ -413,20 +444,132 @@ body {
         width: 200px;
         margin-top: 30px;
     }
+} */
+
+
+
+
+
+/* For Bootstrap 4 */
+
+.container {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 20px;
+}
+
+.header__top {
+    margin-bottom: 40px;
+}
+
+.tm {
+    margin-bottom: 114px;
 }
 
 
-@media screen and (min-width: 1440px) {
-    .wrapper{
-        width: 1440px;
-        margin-bottom: 73px;
+
+
+@media screen and (min-width: 768px) {
+    .page-header {
+        background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0,.3)), url(../img/bg_768.jpg);
+    }
+
+    /* .wrapper{
+        width: 768px;
+       
+    } */
+
+    .page-header {
+        padding-bottom: 190px;
+    }
+
+    .page-header {
+        height: 700px;
+        align-content: center;
+    }
+
+    .top {
+        position: relative;
+        width: 768px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 130px;
+    }
+
+    .buttons-wrapper-top {
+        margin-bottom: 110px;
+    }
+
+    .text-big-holiday {
+        font-size: 52px;
+        width: 500px;
+        margin: 0 auto;
+        padding-top: 0px;
+        margin-bottom: 34px;
+    }
+
+    .text-small {
+        font-size: 24px;
+        width: 420px;
+        margin-bottom: 34px;
+      }
+    
+    .list-people {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .list-people-item {
+        display: block;
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .buttons-wrapper-top {
+        margin-bottom: 0px;
+    }
+
+    .header__top {
+        margin-bottom: 160px;
+    }
+
+    .tm {
+        margin-bottom: 0px;
+    }
+
+    .list-people-item:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+    }
+
+    .list-people-item {
+        margin-top: 0px;
+    }
+
+}
+
+
+@media screen and (min-width: 940px) {
+    .page-header {
+        background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0,.3)), url(../img/bg_1440.jpg);
+    }
+
+    .page-header {
+        padding-bottom: 200px;
     }
 
     .top {
         width: 950px;
     }
-    
-    .list-people {
-        width: 950px;
+
+    .list-people-item {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
+    
 }
