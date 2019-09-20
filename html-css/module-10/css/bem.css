@@ -111,6 +111,7 @@ body {
     text-align: center;
     margin: 0;
     margin-bottom: 110px;
+    padding: 0 5rem;
 }
 
 /* Header Button */
@@ -156,7 +157,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 515px;
+    width: 538px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -385,7 +386,7 @@ body {
     height: 560px;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 .content-list-second-section {
@@ -718,3 +719,10 @@ input[type="text"] {
                    background: url(../img/header_bg@2x.jpg) no-repeat;
                }
            } */
+
+           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .header {
+                background: url(../img/header_bg@2x.jpg) no-repeat;
+            }
+           }
+            
