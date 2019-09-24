@@ -868,8 +868,6 @@ body {
 }
 
 .button-menu {
-  position: relative;
-  display: inline-block;
   border-width: 0px;
   border-color: #ffffff;
   border-style: solid;
@@ -879,8 +877,9 @@ body {
   padding: 0;
   font-size: 0;
   margin-right: 1px;
-  right: 0px;
-  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fce38a;
 }
 
@@ -894,6 +893,10 @@ body {
 
 .button-menu:hover .svg-menu {
   fill: #ffffff;
+}
+
+.button-menu svg {
+  fill: #f38181;
 }
 
 /* SVG */
@@ -911,17 +914,11 @@ body {
   fill: #fce38a;
 }
 
-/* SVG Menu Buttons*/
-
-.svg-menu {
-  width: 27px;
-  height: 27px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  transform: translate(50%, 50%);
+.socials svg {
   fill: #f38181;
 }
+
+/* SVG Menu Buttons*/
 
 /* Other */
 
