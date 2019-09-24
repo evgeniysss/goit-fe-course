@@ -1,10 +1,10 @@
 /*
    Import partials below
 */
-@import './normalize';
-@import './variables';
-@import './basic';
-@import './fonts_in';
-@import './header';
-@import './main';
-@import './footer';
+@import './helpers/normalize.scss';
+@import './helpers/variables';
+@import './helpers/basic';
+@import './helpers/fonts_in.scss';
+@import './components/header.scss';
+@import './components/main.scss';
+@import './components/footer.scss';
