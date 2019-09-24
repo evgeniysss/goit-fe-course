@@ -37,7 +37,7 @@ text-decoration: none;
   text-transform: uppercase;
   line-height: 23px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-fonts1;
   font-weight: 400;
   &:hover,
   &:focus {
@@ -91,7 +91,7 @@ text-decoration: none;
 
 .text-h2 {
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-fonts1;
   color: $color-grey;
   font-weight: bold;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ text-decoration: none;
 
 .content-item-column-right-header {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-fonts1;
   font-weight: 400;
   color: $color-grey;
   text-transform: uppercase;
@@ -215,7 +215,7 @@ text-decoration: none;
 
 .content-item-column-right-text {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $main-fonts2;
   font-weight: 400;
   color: rgb(153, 153, 153);
   line-height: 24px;
@@ -231,7 +231,7 @@ text-decoration: none;
 /* 2-nd Section */
 .text-center {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $main-fonts2;
   color: rgb(153, 153, 153);
   line-height: 24px;
   text-align: center;
@@ -304,7 +304,7 @@ height: 470px;
 
 .text-name-second-section {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-fonts1;
   color: $color-grey;
   text-transform: uppercase;
   line-height: 16px;
@@ -317,7 +317,7 @@ height: 470px;
 
 .text-occupation-second-section {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $main-fonts2;
   font-weight: 300;
   color: rgb(153, 153, 153);
   font-style: italic;

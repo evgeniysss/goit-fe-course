@@ -512,7 +512,7 @@ body {
 
 .header__text {
   font-size: 150px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
@@ -554,7 +554,7 @@ body {
 
 .header__button-text {
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
@@ -590,7 +590,7 @@ body {
   text-transform: uppercase;
   line-height: 23px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -641,7 +641,7 @@ body {
 
 .text-h2 {
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333333;
   font-weight: bold;
   text-transform: uppercase;
@@ -716,7 +716,7 @@ body {
 
 .content-item-column-right-header {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
@@ -731,7 +731,7 @@ body {
 
 .content-item-column-right-text {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #999999;
   line-height: 24px;
@@ -747,7 +747,7 @@ body {
 
 .text-center {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #999999;
   line-height: 24px;
   text-align: center;
@@ -813,7 +813,7 @@ body {
 
 .text-name-second-section {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333333;
   text-transform: uppercase;
   line-height: 16px;
@@ -826,7 +826,7 @@ body {
 
 .text-occupation-second-section {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #999999;
   font-style: italic;
@@ -1012,7 +1012,7 @@ body {
 
 input[type="text"] {
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #cccccc;
   font-style: italic;
   line-height: 1.6;
@@ -1043,7 +1043,7 @@ input[type="text"] {
 
 .button-text {
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
