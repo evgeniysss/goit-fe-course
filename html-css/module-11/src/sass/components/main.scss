@@ -479,8 +479,7 @@ height: 470px;
 
 .overlay {
   position: absolute;
-  background: -webkit-gradient(linear,left bottom, left top,from($gradient-start-color, .8)), to($gradient-end-color)));
-  background: linear-gradient(to top, $gradient-start-color, rgba($gradient-end-color));
+  background: linear-gradient(to top, $gradient-start-color, $gradient-end-color);
   width: 380px;
   height: 470px;
   margin: 0 auto;
