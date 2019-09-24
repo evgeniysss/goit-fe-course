@@ -1054,5 +1054,6 @@ input[type="text"] {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header {
     background: url(../images/header_bg@2x.jpg) no-repeat;
+    background-size: cover;
   }
 }
