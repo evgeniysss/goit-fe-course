@@ -919,8 +919,7 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  transform: translate(55%, 50%);
-  /* stroke: rgb(252, 227, 138); */
+  transform: translate(50%, 50%);
   fill: #f38181;
 }
 
