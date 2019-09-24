@@ -502,7 +502,7 @@ body {
 
 .header__text-up {
   font-size: 72px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", sans-serif;
   color: #ffffff;
   line-height: 1.2;
   text-align: center;
@@ -631,7 +631,7 @@ body {
 
 .text-up {
   font-size: 24px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", sans-serif;
   color: #333333;
   line-height: 28px;
   text-align: center;
