@@ -1,8 +1,8 @@
 /* Footer */
 .footer-line {
   border: none;
-  background-color: #e5e5e5;
-  color: #e5e5e5;
+  background-color: $color-grey-super-light;
+  color: $color-grey-super-light;
   height: 1px;
   margin: 0;
   padding: 0;
@@ -69,10 +69,10 @@ input[type="text"] {
           box-sizing: border-box;
   width: 150px;
   height: 40px;
-  border: 0px solid #626262;
+  border: 0px solid $color-grey-dark;
   margin: 0 auto;
   padding: 0px;
-  background-color: #95e1d3;
+  background-color: $color-green-light;
   border-radius: 0px;
   &:hover {
   background-color: $color-green;

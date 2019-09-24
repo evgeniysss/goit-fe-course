@@ -217,7 +217,7 @@ text-decoration: none;
   font-size: 15px;
   font-family: $main-fonts2;
   font-weight: 400;
-  color: rgb(153, 153, 153);
+  color: $color-grey-light;
   line-height: 24px;
   text-align: left;
 }
@@ -232,7 +232,7 @@ text-decoration: none;
 .text-center {
   font-size: 15px;
   font-family: $main-fonts2;
-  color: rgb(153, 153, 153);
+  color: $color-grey-light;
   line-height: 24px;
   text-align: center;
   margin: 0;
@@ -319,7 +319,7 @@ height: 470px;
   font-size: 15px;
   font-family: $main-fonts2;
   font-weight: 300;
-  color: rgb(153, 153, 153);
+  color: $color-grey-light;
   font-style: italic;
   line-height: 24px;
   text-align: center;
@@ -386,7 +386,7 @@ height: 470px;
     fill: $color-white;
   }
   svg {
-    fill: #f38181;
+    fill: $color-rose;
   }
 }
 
@@ -430,7 +430,7 @@ height: 470px;
   // flex-direction: row;
   svg {
 
-    fill: #f38181;
+    fill: $color-rose;
   }
 
 
@@ -479,8 +479,8 @@ height: 470px;
 
 .overlay {
   position: absolute;
-  background: -webkit-gradient(linear,left bottom, left top,from(rgba(239, 138, 138, .8)), to(rgba(242, 217, 136, .8)));
-  background: linear-gradient(to top,rgba(239, 138, 138, .8), rgba(242, 217, 136, .8));
+  background: -webkit-gradient(linear,left bottom, left top,from($gradient-start-color, .8)), to($gradient-end-color)));
+  background: linear-gradient(to top, $gradient-start-color, rgba($gradient-end-color));
   width: 380px;
   height: 470px;
   margin: 0 auto;
@@ -493,8 +493,8 @@ height: 470px;
           transition-duration: 0.2s;
   right: 10px;
   top: -10px;
-  -webkit-box-shadow: 10px 10px #95e1d3;
-          box-shadow: 10px 10px #95e1d3;
+  -webkit-box-shadow: 10px 10px $color-green-light;
+          box-shadow: 10px 10px $color-green-light;
   opacity: 0;
   &:hover {
     -webkit-transition-property: opacity;
