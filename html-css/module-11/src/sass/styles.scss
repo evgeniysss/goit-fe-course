@@ -3,8 +3,10 @@
 */
 @import './normalize';
 @import './variables';
-@import './basic'
-@import 'helpers/fonts.scss';
-@import 'components/header.scss';
-@import 'components/main.scss';
-@import 'components/footer.scss';
+@import './basic';
+// @import './abc';
+// @import './fonts';
+@import './fonts_in';
+@import './header';
+@import './main';
+@import './footer';

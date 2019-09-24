@@ -1,0 +1,108 @@
+/* Header */
+
+.header {
+  margin: 0 auto;
+  background-image: url(../images/header_bg.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.header__logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.header__top {
+  display: block;
+  padding: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+      margin-bottom: 180px;
+}
+
+.header__text-box {
+  padding: 0px;
+}
+
+.header__text-up {
+  font-size: 72px;
+  font-family: 'Kaushan Script', cursive;
+  color: $color-white;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.header__text {
+  font-size: 150px;
+  font-family: 'Montserrat', sans-serif;
+  color: $color-white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 110px;
+  padding: 0 5rem;
+}
+
+/* Header Button */
+.header__button {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__button-load {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $color-white;
+  background-color: $color-black;
+  &:hover {
+  background-color: $color-green;
+  }
+  &:focus {
+  background-color: $color-green;
+  }
+}
+
+// .header__button-load:hover,
+// .header__button-load:focus {
+// background-color: #7fd9c7;
+// }
+
+.header__button-text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: $color-white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+}
+
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header {
+      background: url(../images/header_bg@2x.jpg) no-repeat;
+  }
+ }
